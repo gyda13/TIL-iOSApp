@@ -9,9 +9,33 @@ import SwiftUI
 
 @main
 struct TILiOSApp: App {
+    
+    @StateObject
+    var auth = Auth()
+    
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }
+          if auth.isLoggedIn {
+             TabView {
+               AcronymsView()
+                 .tabItem {
+                   Label("Acronyms", systemImage: "abc")
+                 }
+               UsersView()
+                 .tabItem {
+                   Label("Users", systemImage: "person.3.fill")
+                 }
+               CategoriesView()
+                 .tabItem {
+                   Label("Categories", systemImage: "tag.fill")
+                 }
+             }
+             .environmentObject(auth)
+           } else {
+             LoginView().environmentObject(auth)
+           }
+         }
+       }
     }
-}
+

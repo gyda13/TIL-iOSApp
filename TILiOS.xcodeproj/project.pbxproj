@@ -7,18 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09737FA4299DAA45004905E1 /* TILiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FA3299DAA45004905E1 /* TILiOSApp.swift */; };
-		09737FA6299DAA45004905E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FA5299DAA45004905E1 /* ContentView.swift */; };
 		09737FA8299DAA47004905E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09737FA7299DAA47004905E1 /* Assets.xcassets */; };
 		09737FAB299DAA47004905E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09737FAA299DAA47004905E1 /* Preview Assets.xcassets */; };
+		09737FE6299DB536004905E1 /* TILiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FA3299DAA45004905E1 /* TILiOSApp.swift */; };
+		09737FE7299DB53A004905E1 /* ResourceRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FDA299DAE3D004905E1 /* ResourceRequestError.swift */; };
+		09737FE8299DB53D004905E1 /* ResourceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FDC299DAE59004905E1 /* ResourceRequest.swift */; };
+		09737FE9299DB540004905E1 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FDE299DAE7F004905E1 /* Auth.swift */; };
+		09737FEA299DB544004905E1 /* Auth+Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FE0299DAE93004905E1 /* Auth+Keychain.swift */; };
+		09737FEB299DB547004905E1 /* AddToCategoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FE2299DAEAB004905E1 /* AddToCategoryError.swift */; };
+		09737FEC299DB550004905E1 /* AcronymRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FE4299DAEC7004905E1 /* AcronymRequest.swift */; };
+		09737FED299DB553004905E1 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FC0299DAC26004905E1 /* UsersView.swift */; };
+		09737FEE299DB556004905E1 /* ResponsiveNavigationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FC2299DAC3A004905E1 /* ResponsiveNavigationStyle.swift */; };
+		09737FEF299DB559004905E1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FC8299DACA9004905E1 /* LoginView.swift */; };
+		09737FF0299DB55E004905E1 /* EditAcronynView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FCA299DACBF004905E1 /* EditAcronynView.swift */; };
+		09737FF1299DB562004905E1 /* CreateUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FCC299DACE4004905E1 /* CreateUserView.swift */; };
+		09737FF2299DB565004905E1 /* CreateCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FCE299DAD19004905E1 /* CreateCategoryView.swift */; };
+		09737FF3299DB56A004905E1 /* CreateAcronymView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FD0299DAD3E004905E1 /* CreateAcronymView.swift */; };
+		09737FF4299DB56D004905E1 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FD2299DAD62004905E1 /* CategoriesView.swift */; };
+		09737FF5299DB570004905E1 /* AddToCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FD4299DAD89004905E1 /* AddToCategoryView.swift */; };
+		09737FF6299DB574004905E1 /* AcronymsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FD6299DADA3004905E1 /* AcronymsView.swift */; };
+		09737FF7299DB576004905E1 /* AcronymDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FD8299DADC4004905E1 /* AcronymDetailView.swift */; };
+		09737FF8299DB579004905E1 /* Acronym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FB4299DAB52004905E1 /* Acronym.swift */; };
+		09737FF9299DB57C004905E1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FB6299DAB93004905E1 /* Category.swift */; };
+		09737FFA299DB57F004905E1 /* CreateAcronymData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FB8299DABA8004905E1 /* CreateAcronymData.swift */; };
+		09737FFB299DB583004905E1 /* CreateUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FBA299DABBA004905E1 /* CreateUserData.swift */; };
+		09737FFC299DB586004905E1 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FBC299DABD2004905E1 /* Token.swift */; };
+		09737FFD299DB58A004905E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FBE299DABE6004905E1 /* User.swift */; };
+		09737FFE299DB58E004905E1 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09737FC6299DAC86004905E1 /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09737FA0299DAA45004905E1 /* TILiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TILiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09737FA3299DAA45004905E1 /* TILiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TILiOSApp.swift; sourceTree = "<group>"; };
-		09737FA5299DAA45004905E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		09737FA7299DAA47004905E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09737FAA299DAA47004905E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		09737FB4299DAB52004905E1 /* Acronym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acronym.swift; sourceTree = "<group>"; };
+		09737FB6299DAB93004905E1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		09737FB8299DABA8004905E1 /* CreateAcronymData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAcronymData.swift; sourceTree = "<group>"; };
+		09737FBA299DABBA004905E1 /* CreateUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserData.swift; sourceTree = "<group>"; };
+		09737FBC299DABD2004905E1 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		09737FBE299DABE6004905E1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		09737FC0299DAC26004905E1 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		09737FC2299DAC3A004905E1 /* ResponsiveNavigationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveNavigationStyle.swift; sourceTree = "<group>"; };
+		09737FC6299DAC86004905E1 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		09737FC8299DACA9004905E1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		09737FCA299DACBF004905E1 /* EditAcronynView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAcronynView.swift; sourceTree = "<group>"; };
+		09737FCC299DACE4004905E1 /* CreateUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserView.swift; sourceTree = "<group>"; };
+		09737FCE299DAD19004905E1 /* CreateCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCategoryView.swift; sourceTree = "<group>"; };
+		09737FD0299DAD3E004905E1 /* CreateAcronymView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAcronymView.swift; sourceTree = "<group>"; };
+		09737FD2299DAD62004905E1 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		09737FD4299DAD89004905E1 /* AddToCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCategoryView.swift; sourceTree = "<group>"; };
+		09737FD6299DADA3004905E1 /* AcronymsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymsView.swift; sourceTree = "<group>"; };
+		09737FD8299DADC4004905E1 /* AcronymDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymDetailView.swift; sourceTree = "<group>"; };
+		09737FDA299DAE3D004905E1 /* ResourceRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRequestError.swift; sourceTree = "<group>"; };
+		09737FDC299DAE59004905E1 /* ResourceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceRequest.swift; sourceTree = "<group>"; };
+		09737FDE299DAE7F004905E1 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		09737FE0299DAE93004905E1 /* Auth+Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth+Keychain.swift"; sourceTree = "<group>"; };
+		09737FE2299DAEAB004905E1 /* AddToCategoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCategoryError.swift; sourceTree = "<group>"; };
+		09737FE4299DAEC7004905E1 /* AcronymRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcronymRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				09737FA3299DAA45004905E1 /* TILiOSApp.swift */,
-				09737FA5299DAA45004905E1 /* ContentView.swift */,
+				09737FB2299DAB30004905E1 /* Utilities */,
+				09737FB3299DAB39004905E1 /* Views */,
+				09737FB1299DAB0C004905E1 /* Models */,
 				09737FA7299DAA47004905E1 /* Assets.xcassets */,
 				09737FA9299DAA47004905E1 /* Preview Content */,
 			);
@@ -65,6 +113,51 @@
 				09737FAA299DAA47004905E1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09737FB1299DAB0C004905E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09737FB4299DAB52004905E1 /* Acronym.swift */,
+				09737FB6299DAB93004905E1 /* Category.swift */,
+				09737FB8299DABA8004905E1 /* CreateAcronymData.swift */,
+				09737FBA299DABBA004905E1 /* CreateUserData.swift */,
+				09737FBC299DABD2004905E1 /* Token.swift */,
+				09737FBE299DABE6004905E1 /* User.swift */,
+				09737FC6299DAC86004905E1 /* ModelData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09737FB2299DAB30004905E1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				09737FDA299DAE3D004905E1 /* ResourceRequestError.swift */,
+				09737FDC299DAE59004905E1 /* ResourceRequest.swift */,
+				09737FDE299DAE7F004905E1 /* Auth.swift */,
+				09737FE0299DAE93004905E1 /* Auth+Keychain.swift */,
+				09737FE2299DAEAB004905E1 /* AddToCategoryError.swift */,
+				09737FE4299DAEC7004905E1 /* AcronymRequest.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		09737FB3299DAB39004905E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09737FC0299DAC26004905E1 /* UsersView.swift */,
+				09737FC2299DAC3A004905E1 /* ResponsiveNavigationStyle.swift */,
+				09737FC8299DACA9004905E1 /* LoginView.swift */,
+				09737FCA299DACBF004905E1 /* EditAcronynView.swift */,
+				09737FCC299DACE4004905E1 /* CreateUserView.swift */,
+				09737FCE299DAD19004905E1 /* CreateCategoryView.swift */,
+				09737FD0299DAD3E004905E1 /* CreateAcronymView.swift */,
+				09737FD2299DAD62004905E1 /* CategoriesView.swift */,
+				09737FD4299DAD89004905E1 /* AddToCategoryView.swift */,
+				09737FD6299DADA3004905E1 /* AcronymsView.swift */,
+				09737FD8299DADC4004905E1 /* AcronymDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +230,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09737FA6299DAA45004905E1 /* ContentView.swift in Sources */,
-				09737FA4299DAA45004905E1 /* TILiOSApp.swift in Sources */,
+				09737FFE299DB58E004905E1 /* ModelData.swift in Sources */,
+				09737FFD299DB58A004905E1 /* User.swift in Sources */,
+				09737FFC299DB586004905E1 /* Token.swift in Sources */,
+				09737FFB299DB583004905E1 /* CreateUserData.swift in Sources */,
+				09737FFA299DB57F004905E1 /* CreateAcronymData.swift in Sources */,
+				09737FF9299DB57C004905E1 /* Category.swift in Sources */,
+				09737FF8299DB579004905E1 /* Acronym.swift in Sources */,
+				09737FF7299DB576004905E1 /* AcronymDetailView.swift in Sources */,
+				09737FF6299DB574004905E1 /* AcronymsView.swift in Sources */,
+				09737FF5299DB570004905E1 /* AddToCategoryView.swift in Sources */,
+				09737FF4299DB56D004905E1 /* CategoriesView.swift in Sources */,
+				09737FF3299DB56A004905E1 /* CreateAcronymView.swift in Sources */,
+				09737FF2299DB565004905E1 /* CreateCategoryView.swift in Sources */,
+				09737FF1299DB562004905E1 /* CreateUserView.swift in Sources */,
+				09737FF0299DB55E004905E1 /* EditAcronynView.swift in Sources */,
+				09737FEF299DB559004905E1 /* LoginView.swift in Sources */,
+				09737FEE299DB556004905E1 /* ResponsiveNavigationStyle.swift in Sources */,
+				09737FED299DB553004905E1 /* UsersView.swift in Sources */,
+				09737FEC299DB550004905E1 /* AcronymRequest.swift in Sources */,
+				09737FEB299DB547004905E1 /* AddToCategoryError.swift in Sources */,
+				09737FEA299DB544004905E1 /* Auth+Keychain.swift in Sources */,
+				09737FE9299DB540004905E1 /* Auth.swift in Sources */,
+				09737FE8299DB53D004905E1 /* ResourceRequest.swift in Sources */,
+				09737FE7299DB53A004905E1 /* ResourceRequestError.swift in Sources */,
+				09737FE6299DB536004905E1 /* TILiOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,11 +378,13 @@
 		09737FAF299DAA47004905E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TILiOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 2LVJ578ZR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -274,6 +392,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,11 +409,13 @@
 		09737FB0299DAA47004905E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TILiOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 2LVJ578ZR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -302,6 +423,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
