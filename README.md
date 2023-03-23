@@ -5,7 +5,7 @@ Users can also create an account, log in using Token authentication, create new 
 
 This App was build using [Vapor API ](https://github.com/gyda13/TIL-Vapor-API) 
 
-# Technologies:
+# Technologies
 - SwiftUI
 
 # Demo
